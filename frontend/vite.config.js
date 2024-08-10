@@ -8,7 +8,8 @@ export default defineConfig({
     port: 5000,
     proxy: {
       '/api': {
-        target: 'http://localhost:3000',
+        // target: 'http://localhost:3000', // Changing to deployed version
+        target: 'https://jwt-authentication-app.onrender.com/',
         changeOrigin: true,
       }
     }
