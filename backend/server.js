@@ -5,7 +5,7 @@ import connectDB from './config/db.js';
 import { errorHandler, notFound } from './middleware/errorMiddleware.js';
 import userRoutes from './routes/userRoutes.js';
 dotenv.config()
-const port = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 
 connectDB()
 const app = express();
